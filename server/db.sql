@@ -1,0 +1,12 @@
+-- CREATE TABLE users (id SERIAL PRIMARY KEY, email VARCHAR(50), password TEXT);
+-- CREATE TABLE notes (id SERIAL PRIMARY KEY, noteid VARCHAR(36), title TEXT, note TEXT, user_id INTEGER REFERENCES users (id) ON DELETE CASCADE, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+-- select * from users;
+-- SELECT * FROM users WHERE email = 'varshith@gmail.com'
+-- select * from notes;
+-- drop table notes;
+-- drop table users;
+-- GRANT ALL PRIVILEGES ON TABLE notes TO varshith;
+-- GRANT ALL PRIVILEGES ON SEQUENCE notes_id_seq TO varshith;
+-- delete from users where email = 'varshith2@gmail.com';
+-- SELECT noteid, title, note FROM notes WHERE user_id = 8;
